@@ -3,9 +3,13 @@
 namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
+
+use Attribute;
+use Illuminate\Support\Facades\Crypt;
+use Illuminate\Notifications\Notifiable;
+use Illuminate\Contracts\Encryption\DecryptException;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Notifications\Notifiable;
 
 class User extends Authenticatable
 {
@@ -17,6 +21,8 @@ class User extends Authenticatable
      *
      * @var list<string>
      */
+
+    // Menentukan kolom-kolom yang dapat diisi
     protected $fillable = [
         'name',
         'email',
@@ -45,4 +51,6 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    
 }

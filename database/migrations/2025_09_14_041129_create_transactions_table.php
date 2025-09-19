@@ -9,6 +9,8 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
+
+    // Membuat tabel 'transactions' dengan kolom-kolom yang diperlukan
     public function up(): void
     {
         Schema::create('transactions', function (Blueprint $table) {

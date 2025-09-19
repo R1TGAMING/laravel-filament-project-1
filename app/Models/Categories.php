@@ -10,6 +10,7 @@ class Categories extends Model
 {
     use  HasFactory;
     
+    // Menentukan kolom-kolom yang dapat diisi
     protected $fillable = [
         'name',
         'description',

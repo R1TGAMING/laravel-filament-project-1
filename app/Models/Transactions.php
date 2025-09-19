@@ -10,6 +10,8 @@ class Transactions extends Model
 {
     use  HasFactory;
     
+
+    // Menentukan kolom-kolom yang dapat diisi
     protected $fillable = [
         'item_id',
         'type',

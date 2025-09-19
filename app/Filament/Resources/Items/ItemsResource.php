@@ -18,7 +18,7 @@ class ItemsResource extends Resource
 {
     protected static ?string $model = Items::class;
 
-    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
+    protected static string|BackedEnum|null $navigationIcon = Heroicon::CubeTransparent;
 
     public static function form(Schema $schema): Schema
     {

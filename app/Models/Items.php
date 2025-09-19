@@ -10,6 +10,8 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 class Items extends Model
 {   
     use  HasFactory;
+
+    // Menentukan kolom-kolom yang dapat diisi
     protected $fillable = [
         'name',
         'description',
